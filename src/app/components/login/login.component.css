@@ -1,74 +1,87 @@
 .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 1rem;
 }
 
 .login-box {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 320px;
+	background: #DAFDBA;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(1, 32, 48, 0.3);
+	text-align: center;
+	width: 400px;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+a {
+	cursor: pointer;
 }
 
 h2 {
-  margin-bottom: 1rem;
-  color: #333;
+  	margin-bottom: 1rem;
+	text-align: center;
+  	color: #012030;
 }
 
 .input-group {
-  margin-bottom: 1rem;
-  text-align: left;
+	margin-bottom: 1rem;
+	text-align: left;
 }
 
 label {
-  font-size: 14px;
-  color: #555;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+	color: #13678A;
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+	width: 90%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #13678A;
+	border-radius: 5px;
+	font-size: 14px;
 }
 
 button {
-  width: 100%;
-  padding: 10px;
-  background: #667eea;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+	width: 90%;
+	padding: 10px;
+	margin-top: 15px;
+	background: #13678A;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s;
 }
 
 button:hover {
-  background: #5a67d8;
+	background: #012030;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
-.login-box {
-  animation: fadeIn 0.5s ease-in-out;
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
 }
-a {
-  cursor: pointer;
+  
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
