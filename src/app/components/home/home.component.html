@@ -1,0 +1,10 @@
+<section class="reviews">
+    <h1>Books reviews</h1>
+  
+    <div class="review-card" *ngFor="let review of reviews">
+      <h3>{{ review.title }}</h3>
+      <p class="author">Autor: {{ review.author }}</p>
+      <p class="content">{{ review.content }}</p>
+    </div>
+</section>
+  
