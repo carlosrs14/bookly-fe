@@ -1,23 +1,46 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
-
+import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-home',
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
   reviews = [
     {
-      title: 'El Señor de los Anillos',
+      book: 'El Señor de los Anillos',
       author: 'J.R.R. Tolkien',
-      content: 'Una aventura épica llena de personajes inolvidables.'
+      username: 'pedro', 
+      content: 'Me parecio un libro muy interesante',
+      created_at: 2025,
+      likes: 10,
+      my_like: true,
+      owner: true,
     },
     {
-      title: '1984',
+      book: '1984',
       author: 'George Orwell',
-      content: 'Un clásico de la distopía que te hace reflexionar.'
-    }
+      username: 'juan',
+      content: 'Un clásico de la distopía que te hace reflexionar.',
+      created_at: 2025,
+      likes: 10,
+      my_like: false,
+      owner: false
+
+    },
+    {
+      book: '1984',
+      author: 'George Orwell',
+      username: 'juan',
+      content: 'esta es otra resena',
+      created_at: 2025,
+      likes: 20,
+      my_like: false,
+      owner: true
+
+    },
+
   ];
 }
