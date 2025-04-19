@@ -1,5 +1,5 @@
 <section class="reviews">
-    <h1>Books reviews</h1>
+    <h1>Reviews</h1>
   
     <div class="review-card" *ngFor="let review of reviews">
       <h3>{{ review.book }}</h3>
@@ -15,7 +15,7 @@
       </ng-template>
         <span class="n_likes">{{ review.likes }}</span>
       </div>
-      <p class="Created_at">created at: {{review.created_at}}</p>
+      <p class="created_at">created at: {{review.created_at}}</p>
     </div>
 </section>
   
